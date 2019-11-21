@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500|Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cuprum|Montserrat:500|Roboto:500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mouse+Memoirs&display=swap');
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    }
+
+li, a{
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    }
+
+#header-head{
+    height: 6em;
+    background-color: #1ad1ff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10px;
+}
+#logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+#links{
+    list-style: none;  
+}
+#links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+#links li a{
+    transition: all 0.3s ease 0s; 
+}
+#links li a:hover{
+    color: black ;
+}
+button{
+    padding: 9px 25px;
+    background-color: white;
+    border: none;
+    margin-left: 25px;
+    border-radius: 60px;
+    cursor: pointer;
+    font-family: "Roboto";
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    color: white;
+    background-color: #00b8e6;
+}
+#button-login{
+    margin-top: 50px;
+    text-align: center;
+}
+#login-info, #admin-info{
+    margin-left: 30%;
+}
+h1{
+    color:black;
+   margin-bottom: 20px;
+   padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+label{
+    margin-left: 5em;
+    font-size: 15px;
+    font-family: "Roboto";
+}
+
+#login-form{
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 18em;
+    width: 25em;
+    background-color:#1ad1ff ;
+}
+#admin-form  {
+    margin-top: 50px;
+    border-radius: 20px;
+    height: 18em;
+    width: 25em;
+    background-color:#1ad1ff ;
+}
+#login button{
+    background-color:white;
+}
+#btn{
+    margin-left: 12em;
+}
+
+
+
+/*Signup */
+#div-head{
+    padding-top: 40px;
+    padding-left: 20%;
+}
+#signup-form{
+    background-color: #00b8e6;
+    width: 60%;
+    height: 60px;
+    color: black;
+    border-radius: 5em;  
+    font-size: 25px;
+
+}
+#signup-details{
+  color: #00b8e6;
+    padding-bottom: 15px;
+
+}
+  
+/* SearchFilter*/
