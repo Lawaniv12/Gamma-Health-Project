@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Student/Parent Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+         <div id="header-head">
+              <img id="logo" src="" alt="logo"/>
+                <nav>
+                    <ul id="links">
+                        <li><a href="signup.html">Signup</a></li>                     
+                    </ul>
+                </nav>
+                </div>
+            </header>
+
+             <div id="button-login">
+                 <a id="stud-login" href="login.html"><button>Parent/Student Login</button></a>
+                 <a id="admin-login" href="adminlogin.html"><button>Admin Login</button></a>
+                </div>
+
+
+                    <section id="login-info">
+                    <div id="login-form">
+                         <form id="pslogin">
+                            <h1>Parent/Student Login </h1>
+                            <label>Email: </label>
+                            <input required type="text" id="email" placeholder="Email" v-model='email'>
+                             <br><br>
+                             <label>Password: </label>
+                             <input required type="password" id="password" placeholder="Password" v-model='password'>
+                             <br><br>
+                             <button id="btn" v-on:click='onSubmit'>Login</button>
+                            </form> 
+                        </div>
+                                    
+            </section>
+
+            <script> 
+            var loginForm= new Vue({
+    el: "#pslogin",
+    data: {
+    email: "",
+    password: "",
+    },
+    methods: {
+        onSubmit: function() {
+        // check if the email already exists
+        var users = "";
+        var newEmail = this.email;
+        if (localStorage.getItem('users')) { // 'users' is an array of objects
+        users = JSON.parse(localStorage.getItem('users'));
+        };
+        if (users) {
+        if (users.some(function(user) {return user.email === newEmail})) {
+        alert('Email already exists!');
+        return;
+        }
+        users.push({'email': newEmail, 'password': this.password});
+        localStorage.setItem('users', JSON.stringify(users));
+        }
+        else {
+            alert("Email/Password doesnt exists")
+        users = [{'email': newEmail, 'password': this.password}];
+        localStorage.setItem('users', JSON.stringify(users));
+        }
+        }
+        }      
+    })
+            </script>
+</body>
+</html>
