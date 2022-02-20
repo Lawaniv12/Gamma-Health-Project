@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(19, 135, 80);
+}
+
+.foot {
+    width: 100%;
+    color: #ffffff;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px 20px;
+}
+
+.foot ul {
+    font-family: 'Roboto', sans-serif;
+}
+
+.foot ul li {
+    list-style: none;
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.foot ul li:hover {
+    color: #362706;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.foot a:hover {
+    color: #362706;
+}
+
+.social {
+    padding-bottom: 10px;
+}
+
+.foot h1 {
+    font-size: 30px;
+    padding-bottom: 15%;
+    font-family: 'Merriweather', serif;
+}
+
+.foot h1:hover {
+    color: #E5E3C9;
+}
+
+.social img {
+    width: 6%;
+}
+
+.fac {
+    height: 2.5vh;
+}
+
+.mandate p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    word-spacing: 10px;
+}
+
+.who-img {
+    display: flex;
+    align-items: center;
+    padding-left: 30%;
+    padding-bottom: 5%;
+    cursor: pointer;
+}
+
+.who-img h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+.who-img .who-logo {
+    width: 20%;
+}
+
+.sub-footer {
+    background-color: #A1B57D;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.sub-footer h1 {
+    padding-top: 10px;
+    font-size: 25px;
+}
+
+.sub-footer h2 {
+    width: 20%;
+    background-color: #362706;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sub-footer h2:hover {
+    background-color: antiquewhite;
+    color: #362706;
+    transform: scale(1.03);
+    border: 1px solid #362706;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:425px) {
+    .foot h1 {
+        font-size: 20px;
+        padding-right: 10px;
+    }
+    .foot ul li {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    .who-img {
+        width: 100%;
+    }
+    .who-img .who-logo {
+        width: 40%;
+    }
+    .who-img h1 {
+        font-size: 15px;
+    }
+    .foot .mandate p {
+        word-spacing: 1px;
+        font-size: 12px;
+    }
+    .sub-footer {
+        padding-right: 20px;
+    }
+    .sub-footer h1 {
+        font-size: 20px;
+    }
+    .sub-footer h2 {
+        display: none;
+    }
+    .mandate a {
+        font-size: 12px;
+    }
+}
