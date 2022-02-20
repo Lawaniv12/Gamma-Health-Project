@@ -46,7 +46,7 @@ export default {};
 <style scoped>
 .you-videos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(30px, 4fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 4fr));
   grid-gap: 2%;
   width: 80%;
   margin: 0% 9%;
