@@ -344,6 +344,10 @@ iframe{
     .logo {
         display: none;
     }
+    .newsletter{
+        display: block;
+    }
+   
     
     
     
@@ -389,6 +393,7 @@ footer form button:hover {
     border: 1px solid #e4811c;
     color: #e4811c;
 }
+
 
 footer form div {
     display: flex;
