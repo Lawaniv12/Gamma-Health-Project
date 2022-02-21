@@ -3,6 +3,7 @@
     padding: 0;
     font-family: poppins, montserrat;
     box-sizing: border-box;
+
 }
 .header{
     min-height: 100vh;
@@ -172,6 +173,9 @@ img{
 
 
 @media screen and (max-width: 850px){
+    body{
+        width: 100%;
+    }
     .sample-tested, #death-rate, #active-cases, #discharged-cases{
         color: whitesmoke;
         font-size: 20px;
@@ -296,14 +300,18 @@ iframe{
 /*  */
 
 @media only screen and (max-width: 858px){
+    body{
+        overflow-x: hidden;
+    }
     .text-box h1{
         font-size: 2.1rem;
 
     }
     nav img{
         display: block;
-        width: 80px;
+        width: 100px;
         text-align: left;
+        align-items: left;
 
     }
     .navlinks ul li{
@@ -327,6 +335,17 @@ iframe{
         height: 100%;
         width: 100%;
     }
+    .footer-top{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: 60px;
+    }
+    .logo {
+        display: none;
+    }
+    
+    
     
 }
 .footer{
