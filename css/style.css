@@ -116,6 +116,9 @@ img{
     grid-column-end: 4;
     box-shadow: 1px 1px 5.5px gray;
     position: relative;
+    width: 100%;
+    padding:20px;
+    border-radius: 5px;
 }
 .data-info-bg-White h5{
     position: absolute;
